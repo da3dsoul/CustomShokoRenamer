@@ -11,20 +11,11 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="InfluxDB.Client" Version="1.10.0-dev.1049" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Shoko.Plugin.Abstractions" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="packages\**" />
-    <Compile Remove="ShokoServer\**" />
     <EmbeddedResource Remove="packages\**" />
-    <EmbeddedResource Remove="ShokoServer\**" />
     <None Remove="packages\**" />
-    <None Remove="ShokoServer\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="ShokoServer\Shoko.Commons\Shoko.Commons.csproj" />
-    <ProjectReference Include="ShokoServer\Shoko.Commons\Shoko.Models\Shoko.Models.csproj" />
-    <ProjectReference Include="ShokoServer\Shoko.Server\Shoko.Server.csproj" />
   </ItemGroup>
 </Project>
